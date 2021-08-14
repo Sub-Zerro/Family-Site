@@ -2,6 +2,9 @@
 
 let enter;
 const button = document.querySelector('.btn');
+let img = document.createElement("img");
+img.src = "https://cdn.discordapp.com/attachments/876035186305941524/876127281033138216/dac3bc690788712b.png";
+let div = document.createElement('div');
 
 
 function parol () {
@@ -20,7 +23,8 @@ while (enter!="Огурец226") {
 
         
         button.addEventListener('click', () => {
-            alert("Новых новостей пока что нет(");
+            div.append(img);
+            document.body.append(div);
         });
 
     
@@ -37,7 +41,6 @@ while (enter!="Огурец226") {
 
     };    
 };
-
 
 
 
